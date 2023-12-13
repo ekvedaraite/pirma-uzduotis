@@ -13,7 +13,7 @@ fetch('https://randomuser.me/api/')
   .then(data => {
     const img = document.createElement('img')
     img.src = data.results[0].picture.large
-    img.width = 500
+    img.width = 300
     document.body.append(img)
 
     const h1 = document.createElement('h1')

@@ -10,17 +10,46 @@
             background: lightblue;
             color: blue;
             font-family: verdana;
-            padding: 10px;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Set the body height to 100% of the viewport height */
         }
+
         img {
-            display: block;
-            margin: auto;
             border-radius: 50px;
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        h1, h2, p {
+            margin: 5px;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            img {
+                display: block;
+                text-align: center;
+                margin: 10px;
+            }
+
+            p {
+                max-width: 100%;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
